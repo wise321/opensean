@@ -4,7 +4,7 @@ on:
   schedule:
     # Every 5 minutes (GitHub's minimum). Scheduled runs can be delayed a few
     # minutes under load — fine for a sales feed. Widen to '*/15 * * * *' etc.
-    - cron: '*/5 * * * *'
+    - cron: '*/20 * * * *'
   workflow_dispatch: {}        # adds a "Run workflow" button for manual/test runs
 
 # Needed so the job can commit the updated watermark (state.json) back to the repo.
