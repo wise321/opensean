@@ -1,0 +1,20 @@
+{
+  "name": "nullthread-sales-bot",
+  "version": "1.0.0",
+  "description": "Posts NullThread OpenSea sales to a Discord channel in real time, with the NFT image.",
+  "type": "commonjs",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "test:post": "node test.js",
+    "test:dry": "node test.js --dry"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@opensea/stream-js": "^0.0.30",
+    "dotenv": "^16.4.5",
+    "ws": "^8.18.0"
+  }
+}
